@@ -9,6 +9,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/kafka-properties" />
+            <option value="$PROJECT_DIR$/kafka-to-elasticsearch" />
             <option value="$PROJECT_DIR$/wikimedia-to-kafka" />
           </set>
         </option>

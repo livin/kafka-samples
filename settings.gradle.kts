@@ -7,3 +7,5 @@
 
 rootProject.name = "kafka-samples"
 include("wikimedia-to-kafka")
+include("kafka-to-elasticsearch")
+include("kafka-properties")
