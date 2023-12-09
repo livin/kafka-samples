@@ -35,5 +35,3 @@ In subproject directories use relative path, e.g.:
 ```bash
 ../gradlew ... 
 ```
-
-Or you can build 
