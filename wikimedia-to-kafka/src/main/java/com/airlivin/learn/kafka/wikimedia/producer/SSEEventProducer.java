@@ -1,6 +1,6 @@
 package com.airlivin.learn.kafka.wikimedia.producer;
 
-import com.airlivin.learn.kafka.wikimedia.config.KafkaProperties;
+import com.airlivin.learn.kafka.config.KafkaProperties;
 import com.airlivin.learn.kafka.wikimedia.sse.ServerSentEvent;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;

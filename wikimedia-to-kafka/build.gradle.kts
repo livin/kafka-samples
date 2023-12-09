@@ -11,6 +11,8 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":kafka-properties"))
+
     implementation("org.apache.kafka:kafka-clients:3.6.0")
 
     implementation("org.slf4j:slf4j-api:2.0.9")

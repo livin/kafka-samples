@@ -1,4 +1,4 @@
-package com.airlivin.learn.kafka.wikimedia.config;
+package com.airlivin.learn.kafka.config;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
