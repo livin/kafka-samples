@@ -14,7 +14,7 @@ public class SSEEventProducer {
     /**
      * Creates producer for given topic
      * that takes SSEEvents as input.
-     * @param topic
+     * @param topic target kafka topic.
      */
     public SSEEventProducer(String topic) {
         this.topic = topic;
