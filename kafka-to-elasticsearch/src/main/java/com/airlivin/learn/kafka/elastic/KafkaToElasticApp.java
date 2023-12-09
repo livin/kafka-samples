@@ -10,18 +10,16 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class KafkaToElasticApp {
-    private KafkaProperties kafkaProps;
-    private final ElasticProducer producer;
     private final WikimediaKafkaConsumer consumer;
     private final ScheduledExecutorService executor = Executors.newScheduledThreadPool(5);
 
 
     public KafkaToElasticApp() {
-        kafkaProps = new KafkaProperties();
+        KafkaProperties kafkaProps = new KafkaProperties();
         kafkaProps.put(ConsumerConfig.GROUP_ID_CONFIG, "kafka-to-elastic");
         kafkaProps.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
 
-        producer = new ElasticProducer();
+        ElasticProducer producer = new ElasticProducer();
         consumer = new WikimediaKafkaConsumer(kafkaProps);
     }
 
