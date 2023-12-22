@@ -29,7 +29,7 @@ public class KafkaToElasticApp {
         try {
             kafkaProps.load(new FileInputStream("user.properties"));
         } catch (IOException e) {
-            log.error("No user properties file found.");
+            log.error("No user properties file found. Please put user.properties with elastic settings.");
         }
 
         producer = new ElasticProducer(kafkaProps);
