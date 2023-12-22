@@ -29,6 +29,6 @@ public class WikimediaProducerApp {
     }
 
     private void exitAfter() {
-        executor.schedule(() -> System.exit(0), 20, SECONDS);
+        executor.schedule(() -> System.exit(0), 60, SECONDS);
     }
 }
