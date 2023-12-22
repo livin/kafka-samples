@@ -32,7 +32,7 @@ dependencies {
 
 //    implementation("org.elasticsearch:elasticsearch:7.17.1")
     implementation("org.elasticsearch.client:elasticsearch-rest-high-level-client:7.10.2")
-//    implementation("com.fasterxml.jackson.core:jackson-databind:2.15.1")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.15.1")
 
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")

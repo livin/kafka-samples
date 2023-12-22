@@ -45,10 +45,6 @@ public class KafkaToElasticApp {
         producer.stream(consumer.stream());
     }
 
-    private void handleMessage(String s) {
-        out.println("Message: " + s);
-    }
-
     private void exitAfter(final int seconds) {
         out.println(STR."Scheduling finish in \{seconds} secs.");
         executor.schedule(this::quit, seconds, TimeUnit.SECONDS);
